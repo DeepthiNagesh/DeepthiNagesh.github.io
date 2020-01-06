@@ -1,0 +1,428 @@
+/*body
+{
+	margin:0;
+	padding:0;
+}
+#box
+{
+	/*display:flex;
+	width:100%;
+	clear:both;
+	margin:0;
+	padding:0;
+}*/
+html
+{
+scroll-behavior: smooth;
+}
+body
+{
+	margin:0;
+	background-color:white;
+	scroll-behavior: smooth;
+	text-rendering: optimizeLegibility;
+	
+}
+
+#logo-box
+{
+	position:fixed;
+	display:inline-block;
+	float:left;
+	width:15%;
+	height:100%;
+}
+#headline
+{
+	background-image:linear-gradient(rgba(12, 168, 207,0.4),rgba(12, 168, 207,0.4)),url('hands-edited.png');
+	display:inline-block;
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	width:85%;
+	height:100%;
+	position: relative;
+	left:15%;
+	top:0%;
+	background-repeat: no-repeat;
+    background-size: cover;
+    overflow:hidden;
+    
+    
+    /*float:right;*/ 
+    
+    
+}
+#name
+{
+	position:relative;
+	top:30%;
+	left:30%;
+	font-size: 400%;
+	color:white;
+	font-family: 'Bitter', serif;
+}
+#description
+{
+	position:relative;
+	top:30%;
+	left:27%;
+	width:50%;
+	font-size: 150%;
+	font-family: 'Bitter', serif;
+	color:white;
+	text-align: center;
+}
+
+#logo
+{
+	display:inline-block;
+
+	float:left;
+	box-sizing: border-box;
+	margin:0px;
+	width:100%;
+	padding:0px;
+	
+	/*height:150px;*/
+}
+#links
+{
+	display: inline-block;
+	/*background-color: rgb(1, 9, 66);*/
+	height:100%;
+	width:100%;
+	position:relative;
+	top:10%;
+}
+
+#menuitem1
+{
+	display:block;
+	box-sizing: border-box;
+	position: relative;
+	/*top:100;*/
+	left:0%;
+    text-decoration: none;
+    border-radius: 9px;
+    opacity: 1;
+    font-size: 18px;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    align-self: center;
+    width:80%;
+  }
+#menuitem2{
+	display:block;
+	box-sizing: border-box;
+	position: relative;
+	/*top:150;*/
+	left:0%;
+    text-decoration: none;
+    border-radius: 9px;
+    opacity: 1;
+    
+    font-size: 18px;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    align-self: center;
+    width:80%;
+  }
+#menuitem3{
+	display:block;
+	box-sizing: border-box;
+	position: relative;
+	/*top:200;*/
+	left:0%;
+    text-decoration: none;
+    border-radius: 9px;
+    opacity: 1;
+    
+    font-size: 18px;
+    font-family: 'Signika Negative', sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    align-self: : center;
+    width:80%;
+  }
+#menuitem1:hover,#menuitem2:hover,#menuitem3:hover
+{
+	background-color: black;
+	color:white;
+}
+#menuitem1:focus,#menuitem2:active,#menuitem3:active
+{
+	color:rgba(12, 168, 255,0.7)
+}
+#projectsContainer,#aboutMe,#contactContainer
+ {
+
+ 	width:85%;
+ 	position:relative;
+ 	left:15%;
+ 	overflow:hidden;
+ }
+.project-element
+{
+	position: relative;
+	width:45%;
+	height:45%;
+	display:inline-block;
+	box-sizing: border-box;
+	float:left;
+	/*-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 
+  	transition: width 2s;*/
+  	
+	transition: opacity .25s ease;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    padding:0;
+    margin:2;
+    text-align: center;
+
+}
+#iv
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(refugeeCrisis.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#et
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(EdTech.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#ui
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(UI_proj.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#tap
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(Tap-cropped.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#wt
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(WebProject.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#gv
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(Voyager1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#tb
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(tbDiagnosis.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#iv:hover
+{
+	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(refugeeCrisis.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+}
+#et:hover
+{
+	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(EdTech.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#ui:hover
+{
+	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(UI_proj.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#tap:hover
+{
+	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(Tap-cropped.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#wt:hover
+{
+	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(WebProject.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#gv:hover
+{
+	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(Voyager1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#tb:hover
+{
+	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(tbDiagnosis.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.heading
+{
+	position: relative;
+	left:40%;
+	font-size: 200%;
+	font-family: 'Signika Negative', sans-serif;
+}
+/*
+#aboutMe
+{
+	overflow: hidden;
+}*/
+.etlink
+{
+	position:relative;
+	top:50%;
+	left:0%;
+	z-index:0;
+	font-family: 'Bitter', serif;
+	text-decoration: none;
+
+}
+.chemistry
+{
+	text-align:justify;
+	width:70%;
+	position:relative;
+	margin-right:auto;
+	margin-left:15%;
+	margin-bottom:5%;
+	font-family: 'Signika Negative', sans-serif;
+}
+.content
+{
+	transition: all 0.3s ease;
+	position:relative;
+	top:30%;
+	text-align: center;
+	font-color:white;
+	width:70%;
+	height:100%;
+	color:white;
+	display:inline-block;
+	overflow:hidden;
+
+}
+.content:hover
+{
+	position:relative;
+	top:10%;
+}
+
+.test
+{
+	transition: opacity 0.3s ease;
+	opacity:0;
+	height:100%;
+	width:100%;
+	font-family: 'Fira Sans', sans-serif;
+	overflow:hidden;
+}
+.test:hover
+{
+	opacity:1;
+}
+
+.multitouchImg
+{
+	overflow:hidden;
+	display:inline-block;
+	float:left;
+	border:1px solid black;
+	margin:1%;
+	width:30%;
+	cursor:pointer;
+}
+.mtdesign
+{
+	overflow:hidden;
+	display:inline-block;
+	float:left;
+	cursor:pointer;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+
+  background-color: #fefefe;
+  margin:3% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sourceimage
+{
+	width:100%;
+}
+
+
+.listitem
+{
+	background:url(InfoVizProject/tick-icon.png) no-repeat left top;
+	list-style: none;
+	padding: 0.5% 0% 2% 4%;
+	margin:0;
+	font-family: 'Signika Negative', sans-serif;
+}
+.subheadings
+{
+	color:rgb(12, 168, 207);
+	font-family: 'Source Serif Pro', serif;
+	margin: 0%;
+	padding:0%;
+}
+.subcontent
+{
+	position:relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:95%
+}
+
+

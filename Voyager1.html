@@ -1,0 +1,67 @@
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id='logo-box' >
+		<img id='logo' src="logo-bolder.png" />
+		<div id='links'>
+		<ul style='list-style: none;position: relative;left:0;'>
+		<li><a href="#projectsContainer" id= 'menuitem1'>PROJECTS</a></li>
+		<li><a href="#aboutMe" id= 'menuitem2'>ABOUT ME</a></li>
+		<li><a href="#" id='menuitem3'>CONTACT</a></li>
+		</ul>
+		</div>
+	</header>
+	<div class='chemistry'>
+	<header>
+	<h1>Voyager 1:Reaching for the stars</h1>
+	</header>
+	<ul><li>Project-type:Group Project for the course Graphics and Visualization</li>
+		<li>Where: Bangalore Institute of Technology,Bangalore,India</li>
+		<li>My Role: Participated in overall design and development</li></ul> 
+		
+	<h2>What is Voyager1?</h2>
+	<p>Voyager 1 is the first spacecraft to reach interstellar space. It originally was launched (along with Voyager 2) in 1977 to explore the outer planets in our solar system. However, it has remained operational long past expectations and continues to send information about its journeys back to Earth. The spacecraft officially entered interstellar space in August 2012, almost 35 years after its voyage began. The discovery wasn't made official until 2013, however, when scientists had time to review the data sent back from Voyager 1.Voyager 1 was actually the second of the twin spacecraft to launch, but it was the first to race by Jupiter and Saturn. The images it sent back have been used in schoolbooks and newspaper outlets for a generation. Also on board was a special golden record, carrying voices and music from Earth out into the cosmos. In December 2017 a set of thrusters aboard the Voyager 1 spacecraft successfully fired up after 37 years without use.
+	</p>
+	<h2>What is the project about?</h2>
+	<p>This computer graphics and visualization project is an attempt to simulate the path of voyager 1 which is Humanity's Farthest Spacecraft,to celebrate its 40 years in space</p>
+	<h2>Design</h2>
+	<p>The project can be broadly classified to contain 4 modules.<ol>
+		<li><p>The first being the model of the Solar System, with the path taken by the Voyager-1 being depicted. The fly-by associated with planets Jupiter and Saturn has also been demonstrated. This is achieved using mathematical functions to depict a spiral, taking into consideration the time of flyby and the satellite's subsequent journey into the region now best described as the helio sheath.</p>
+		<div style='display:inline-block;width:100% margin-right:auto;margin-left: auto;'>
+		<img src='Voyager1/1.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
+		<img src='Voyager1/2.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
+		<img src='Voyager1/2after.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
+		</div>
+		</li>
+		<li><p>The second module being implemented is the propulsion of the Satellite as it leaves Earth. This again is implemented using Mathematical functions, giving an idea as to how the probe left the Earth's atmosphere, before continuing its journey across space.</p>
+		<img src='Voyager1/3.png' style='overflow:hidden;width:50%;position:relative;display:block;margin-right:auto;margin-left: auto;'/>
+		</li>
+		<li><p>The third module implemented is a 2D depiction of the timeline of the events occurring from the propulsion of Voyager-1 on 1977, to its current day position.</p>
+		<img src='Voyager1/4.png' style='overflow:hidden;width:50%;position:relative;display:block;margin-right:auto;margin-left: auto;'/>
+		</li>
+		<li> <p>This is represented in a linear fashion, so as to simplify and provide better understanding of the major events occurring in between.The fourth and final module depicted is a 3D representation of the satellite itself, with special emphasis being placed to make it appear as real as possible. This is done by using 3D objects such as spheres, meshes, cylinders,etc. This module also gives a complete 3D view of the figure, implemented using the standard rotate function. Multiple occurrences of Callback functions are being used, especially to coordinate the timer along with the motion of the objects. Mouse functions are used to progress from one screen to the next, providing to the user an interactive rendering.</p>
+		<div style='display:inline-block;width:100% margin-right:auto;margin-left: auto;'>
+		<img src='Voyager1/5.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
+		<img src='Voyager1/6.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
+		<img src='Voyager1/7.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
+		</div>
+
+		</li></ol>
+	</p>
+	</div>
+	<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" id='mcont' style='background-color: rgba(0,0,0,0.5);height:fit-content'>
+    <span class="close">&times;</span>
+    <img src='MT9.png' id='sourceimage' style='overflow:hidden;display:block;width:100%;';/>
+  </div>
+
+	</div>
+
+</body>
+
+<script src="mt.js"></script>
