@@ -257,7 +257,7 @@ body
 }
 #wt:hover
 {
-	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(WebProject.png);
+	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(WebProject.PNG);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
