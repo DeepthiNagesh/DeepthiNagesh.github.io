@@ -2,36 +2,47 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kanit|Source+Serif+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header id='logo-box' >
 		<img id='logo' src="logo-bolder.png" />
 		<div id='links'>
 		<ul style='list-style: none;position: relative;left:0;'>
-		<li><a href="#projectsContainer" id= 'menuitem1'>PROJECTS</a></li>
-		<li><a href="#aboutMe" id= 'menuitem2'>ABOUT ME</a></li>
-		<li><a href="#" id='menuitem3'>CONTACT</a></li>
+		<li><a href="./index.html#projectsContainer" id= 'menuitem1'>PROJECTS</a></li>
+		<li><a href="./index.html#aboutMe" id= 'menuitem2'>ABOUT ME</a></li>
+		<li><a href="./index.html#contactContainer" id='menuitem3'>CONTACT</a></li>
 		</ul>
 		</div>
 	</header>
 	<div class='chemistry'>
-	<h1>MiRNA based Tuberculosis Diagnosis using Machine Learning</h1>
-	<ul><li>Project-type:Group Project for the course Graphics and Visualization</li>
-		<li>Where: Bangalore Institute of Technology,Bangalore,India</li>
-		<li>My Role: Participated in overall design and development</li></ul> 
-	<h2>Motivation</h2>
-	<p>Diseases like Tuberculosis are widespread in developing countries not only because they are difficult to treat but also are a consequence of years of inadequate diagnosis and treatment. Many Machine learning based diagnosis methods have been proposed using clinical classification like age, gender etc. But there have not been many methods using biomarkers like MiRNA.
+		<div style='background:linear-gradient(rgba(25,25,25,0.2),rgba(25,25,25,0.2)),url(mirna.jpg) no-repeat;background-size:cover;width:100%;height:40%;'>
+		<h1 style="position:relative;top:30%;width:70%;margin-left: auto;margin-right: auto;font-family:'Source Serif Pro', serif;color:white">MIRNA BASED TUBERCULOSIS DIAGNOSIS USING MACHINE LEARNING</h1>
+		</div>
+	<ul><li class='listitem'>Project-type:Group Project for the course Graphics and Visualization</li>
+		<li class='listitem'>Where: Bangalore Institute of Technology,Bangalore,India</li>
+		<li class='listitem'>My Role: Participated in overall design and development</li></ul> 
+	<h3 class='subheadings'>MOTIVATION</h3>
+	<p class='subcontent'>Diseases like Tuberculosis are widespread in developing countries not only because they are difficult to treat but also are a consequence of years of inadequate diagnosis and treatment. Many Machine learning based diagnosis methods have been proposed using clinical classification like age, gender etc. But there have not been many methods using biomarkers like MiRNA.
 	</p>
-	<h2>What is the project about?</h2>
-	<p>The project proposes a novel diagnosis technique for Tuberculosis using miRNA as a biomarker. The transcriptional signatures of both healthy and affected individuals are generated to construct a reference map using machine learning techniques, which is then used for the diagnosis of TB in the new patient. Our project allows a user to upload the MiRNA profile of a new patient, which is processed and a final diagnosis is displayed to show which cluster the patient belongs to. </p>
-	<h2>Solution Design</h2>
-	<img src='tbdesign.png' style='overflow:hidden;width:50%;position:relative;display:block;margin-right:auto;margin-left: auto;'/>
-	<h2>Results</h2>
+	<h3 class='subheadings'>WHAT IS THE PROJECT ABOUT?</h3>
+	<p class='subcontent'>The project proposes a diagnosis technique for Tuberculosis using miRNA as a biomarker. The transcriptional signatures of both healthy and affected individuals are generated to construct a reference map using machine learning techniques, which is then used for the diagnosis of TB in the new patient. Our project allows a user to upload the MiRNA profile of a new patient, which is processed and a final diagnosis is displayed to show which cluster the patient belongs to. </p>
+	<h3 class='subheadings'>SOLUTION DESIGN</h3>
+	<img src='tbdesign.png' style='overflow:hidden;width:70%;position:relative;display:block;margin-right:auto;margin-left: auto;'/>
+	<h3 class='subheadings'>RESULTS</h3>
 	<img src='tbDiagnosis.jpg' style='overflow:hidden;width:50%;position:relative;display:block;margin-right:auto;margin-left: auto;'/>
-	<p>Our algorithm gave a 99 percent accuracy in diagnosis of the TB for the test data, which comprised of real MiRNa profiles of 5 new patients.A limitation of the proposed method is that it is has been implemented and tested with a marginally small (train=15, test=5) number of subjects, and that the true prowess of the MST clustering algorithm implemented on a larger dataset cannot be predicted</p>
-	<h2>Future work</h2>
-	<p>Future enhancement and application of the method discussed in this model is that the progression of the treatment can be better and easily studied by using real-time mapping of the current state with the existing reference maps. In addition, a provision to externally validate the results generated using medical diagnosis can make the system even more intelligent.</p>
-	<h2>Publication</h2>
-	Our work has been published in the Journal of Emerging Technologies and Innovative Research.(JETIR June 2019, Volume 6, Issue 6).
+	<p class='subcontent'>Our algorithm gave a 99 percent accuracy in diagnosis of the TB for the test data, which comprised of real MiRNa profiles of 5 new patients.A limitation of the proposed method is that it is has been implemented and tested with a marginally small (train=15, test=5) number of subjects, and that the true prowess of the MST clustering algorithm implemented on a larger dataset cannot be predicted</p>
+	<h3 class='subheadings'>FUTURE WORK</h3>
+	<p class='subcontent'>Future enhancement and application of the method discussed in this model is that the progression of the treatment can be better and easily studied by using real-time mapping of the current state with the existing reference maps. In addition, a provision to externally validate the results generated using medical diagnosis can make the system even more intelligent.</p>
+	<h3 class='subheadings'>Publication</h3>
+	<p class='subcontent'>Our work has been published in the Journal of Emerging Technologies and Innovative Research.(JETIR June 2019, Volume 6, Issue 6).</p>
+	<div style='text-align:center;'>
+		<a href='#top' style='text-decoration: none; color:rgb(25,25,25,0.5);font-family: Arial;font-size:75%;'>
+		<div>
+				<img src='up1.png'/>
+		</div>
+		 Back to top
+		</a>
+	</div>
 	</div>
 </body>

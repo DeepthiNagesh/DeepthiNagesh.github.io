@@ -2,33 +2,37 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kanit|Source+Serif+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header id='logo-box' >
 		<img id='logo' src="logo-bolder.png" />
 		<div id='links'>
 		<ul style='list-style: none;position: relative;left:0;'>
-		<li><a href="#projectsContainer" id= 'menuitem1'>PROJECTS</a></li>
-		<li><a href="#aboutMe" id= 'menuitem2'>ABOUT ME</a></li>
-		<li><a href="#" id='menuitem3'>CONTACT</a></li>
+		<li><a href="./index.html#projectsContainer" id= 'menuitem1'>PROJECTS</a></li>
+		<li><a href="./index.html#aboutMe" id= 'menuitem2'>ABOUT ME</a></li>
+		<li><a href="./index.html#contactContainer" id='menuitem3'>CONTACT</a></li>
 		</ul>
 		</div>
 	</header>
 	<div class='chemistry'>
 	<header>
-	<h1>Voyager 1:Reaching for the stars</h1>
+	<div style='background:linear-gradient(rgba(25,25,25,0.4),rgba(25,25,25,0.4)),url(voyager-title1.jpg) no-repeat;background-size:cover;width:100%;height:40%;'>
+	<h1 style="position:relative;top:30%;width:70%;margin-left: auto;margin-right: auto;font-family:'Source Serif Pro', serif;color:white">VOYAGER 1:REACHING FOR THE STARS</h1>
+	</div>
 	</header>
-	<ul><li>Project-type:Group Project for the course Graphics and Visualization</li>
-		<li>Where: Bangalore Institute of Technology,Bangalore,India</li>
-		<li>My Role: Participated in overall design and development</li></ul> 
+	<ul><li class='listitem'>Project-type:Group Project for the course Graphics and Visualization</li>
+		<li class='listitem'>Where: Bangalore Institute of Technology,Bangalore,India</li>
+		<li class='listitem'>My Role: Design,Development</li></ul> 
 		
-	<h2>What is Voyager1?</h2>
-	<p>Voyager 1 is the first spacecraft to reach interstellar space. It originally was launched (along with Voyager 2) in 1977 to explore the outer planets in our solar system. However, it has remained operational long past expectations and continues to send information about its journeys back to Earth. The spacecraft officially entered interstellar space in August 2012, almost 35 years after its voyage began. The discovery wasn't made official until 2013, however, when scientists had time to review the data sent back from Voyager 1.Voyager 1 was actually the second of the twin spacecraft to launch, but it was the first to race by Jupiter and Saturn. The images it sent back have been used in schoolbooks and newspaper outlets for a generation. Also on board was a special golden record, carrying voices and music from Earth out into the cosmos. In December 2017 a set of thrusters aboard the Voyager 1 spacecraft successfully fired up after 37 years without use.
+	<h3 class='subheadings'>WHAT IS VOYAGER1?</h3>
+	<p class='subcontent'>Voyager 1 is the first spacecraft to reach interstellar space. It originally was launched (along with Voyager 2) in 1977 to explore the outer planets in our solar system. However, it has remained operational long past expectations and continues to send information about its journeys back to Earth. The spacecraft officially entered interstellar space in August 2012, almost 35 years after its voyage began. The discovery wasn't made official until 2013, however, when scientists had time to review the data sent back from Voyager 1.Voyager 1 was actually the second of the twin spacecraft to launch, but it was the first to race by Jupiter and Saturn. The images it sent back have been used in schoolbooks and newspaper outlets for a generation. Also on board was a special golden record, carrying voices and music from Earth out into the cosmos. In December 2017 a set of thrusters aboard the Voyager 1 spacecraft successfully fired up after 37 years without use.
 	</p>
-	<h2>What is the project about?</h2>
-	<p>This computer graphics and visualization project is an attempt to simulate the path of voyager 1 which is Humanity's Farthest Spacecraft,to celebrate its 40 years in space</p>
-	<h2>Design</h2>
-	<p>The project can be broadly classified to contain 4 modules.<ol>
+	<h3 class='subheadings'>WHAT IS THE PROJECT ABOUT?</h3>
+	<p class='subcontent'>This computer graphics and visualization project is an attempt to simulate the path of voyager 1 which is Humanity's Farthest Spacecraft,to celebrate its 40 years in space</p>
+	<h3 class='subheadings'>DESIGN</h3>
+	<p class='subcontent'>The project contains 4 modules.
+		<ol class='subcontent'>
 		<li><p>The first being the model of the Solar System, with the path taken by the Voyager-1 being depicted. The fly-by associated with planets Jupiter and Saturn has also been demonstrated. This is achieved using mathematical functions to depict a spiral, taking into consideration the time of flyby and the satellite's subsequent journey into the region now best described as the helio sheath.</p>
 		<div style='display:inline-block;width:100% margin-right:auto;margin-left: auto;'>
 		<img src='Voyager1/1.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
@@ -51,6 +55,14 @@
 
 		</li></ol>
 	</p>
+	<div style='text-align:center;'>
+		<a href='#top' style='text-decoration: none; color:rgb(25,25,25,0.5);font-family: Arial;font-size:75%;'>
+		<div>
+				<img src='up1.png'/>
+		</div>
+		 Back to top
+		</a>
+	</div>
 	</div>
 	<div id="myModal" class="modal">
 

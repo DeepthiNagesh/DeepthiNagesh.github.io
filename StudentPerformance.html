@@ -2,29 +2,42 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kanit|Source+Serif+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
 	<header id='logo-box' >
 		<img id='logo' src="logo-bolder.png" />
 		<div id='links'>
 		<ul style='list-style: none;position: relative;left:0;'>
-		<li><a href="#projectsContainer" id= 'menuitem1'>PROJECTS</a></li>
-		<li><a href="#aboutMe" id= 'menuitem2'>ABOUT ME</a></li>
-		<li><a href="#" id='menuitem3'>CONTACT</a></li>
+		<li><a href="./index.html#projectsContainer" id= 'menuitem1'>PROJECTS</a></li>
+		<li><a href="./index.html#aboutMe" id= 'menuitem2'>ABOUT ME</a></li>
+		<li><a href="./index.html#contactContainer" id='menuitem3'>CONTACT</a></li>
 		</ul>
 		</div>
 	</header>
 	<div class='chemistry'>
-	<h1>Student Performance Analysis System</h1>
-	<ul><li>Project-type:Group Project for the course Graphics and Visualization</li>
-		<li>Where: Bangalore Institute of Technology,Bangalore,India</li>
-		<li>My Role: Participated in overall design and development</li></ul> 
-	<h2>What is the project about?</h2>
-	<p>The website is a centralized student performance analysis software interface that examines individual student achievement outcomes and provides a comprehensive review of the same. The objective is to present information in easy-to-understand visual dashboards, which can then be used to make benchmark comparisons and gain nuanced insights</p>
-	<h2>Design</h2>
-	<img src='wt/design.png' style='overflow:hidden;width:50%;position:relative;display:block;margin:2%'/>
-	<h2>Final UI</h2>
-	<div style='display:inline-block;width:100% margin-right:auto;margin-left: auto'>
+		<div style='background:linear-gradient(rgba(25,25,25,0.4),rgba(25,25,25,0.4)),url(TeachingClass.jpg) no-repeat;background-size:cover;width:100%;height:40%;'>
+		<h1 style="position:relative;top:30%;width:70%;margin-left: auto;margin-right: auto;font-family:'Source Serif Pro', serif;color:white">STUDENT PERFORMANCE ANALYSIS SYSTEM</h1>
+		</div>
+	<ul><li class='listitem'>Project-type:Group Project for the course Graphics and Visualization</li>
+		<li class='listitem'>Where: Bangalore Institute of Technology,Bangalore,India</li>
+		<li class='listitem'>My Role: Wireframing, Design and Development</li></ul> 
+	<h3 class='subheadings'>WHAT IS THE PROJECT ABOUT?</h3>
+	<p class='subcontent'>Student performance analysis is a vast and dynamic process. It is among one of the most widely used database management system, with data additions occurring at an exponential rate. Efficient storage and retrieval of marks are of utmost importance to ensure that no bottlenecks are encountered. The project on Student performance analysis system is a small subjective take on this. The website is a centralized student performance analysis software interface that examines individual student achievement outcomes and provides a comprehensive review of the same. The objective is to present information in easy-to-understand visual dashboards, which can then be used to make benchmark comparisons and gain nuanced insights.</p>
+	<h3 class='subheadings'>DESIGN-WEBSITE ARCHITECTURE</h3>
+	<img class='subcontent' src='wt/design.png' style='overflow:hidden;width:50%;position:relative;display:block;margin:2%'/>
+	<h3 class='subheadings'>MAJOR MODULES</h3>
+	<ul>
+		<li><b>Student Login</b>:This module allows a student to login using his/her USN and obtain a summary of scores throughout the semesters, in addition a graphical representation of the scores is provided for easier comprehension.</li>
+		<li><b>Professor login</b>:This module allows a professor to login to check either individual student performance or class performance. The login id and password are checked up with the database for proper authentication.</li>
+		<li><b>Individual student performance</b>:This module gives a summary of the CGPA obtained in different semesters, along with an option to view the summary in an infographic manner using a bar chart which depicts the semester on the x-axis and CGPA on the y-axis. This page can either be viewed directly by the student or the teacher.</li>
+		<li><b>Class Performance</b>: This module takes as input the current semester and section along with the semester of interest (i.e the current class performance in a particular semester). The page shows a set of tabs one for each subject containing a graphical summary of the number of students who have obtained different grade points in the subject. This module can only be viewed through the Professor login.</li>
+		<li><b>Add new student</b>:This module is used by the admin to add a new student to the database. The page contains a form that asks for student details and is filled in by the admin, which on submit results in addition of a new student.</li>
+		<li><b>Add new teacher</b>: This module is used by the admin to add a new teacher to the database. The page contains a form that asks for Professor details and is filled in by the admin, which on submit results in addition of a new teacher.</li>
+		<li><b>Update marks</b>:This module allows the admin to update the marks of students. On entering the semester and USN a new form s dynamically generated to add the grade points of the student for subjects of that semester. On submit of this form the entered marks details are updated in the database.</li>
+	</ul>
+	<h3 class='subheadings'>FINAL UI</h3>
+	<div class='subcontent' style='display:inline-block;width:100% margin-right:auto;margin-left: auto'>
 	<img src='wt/1.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
 	<img src='wt/2.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
 	<img src='wt/3.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
@@ -36,8 +49,16 @@
 	<img src='wt/9.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
 	<img src='wt/10.png' width='32.83%' onclick='displayImage(this)' class='multitouchImg'/>
 	</div>
-	<h2>Reflection</h2>
-	<p>This project gave me an insight into using HTML5, CSS, Javascript, PHP and JQuery to build complete websites.</p>
+	<h3 class='subheadings'>REFLECTION</h3>
+	<p class='subcontent'>This project gave me an insight into using HTML5, CSS, Javascript, PHP and JQuery to build complete websites.</p>
+	<div style='text-align:center;'>
+		<a href='#top' style='text-decoration: none; color:rgb(25,25,25,0.5);font-family: Arial;font-size:75%;'>
+		<div>
+				<img src='up1.png'/>
+		</div>
+		 Back to top
+		</a>
+	</div>
 	</div>
 
 	<div id="myModal" class="modal">
