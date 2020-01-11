@@ -50,12 +50,13 @@ body
 #name
 {
 	position:relative;
-	top:10%;
+	top:0%;
 	left:25%;
 	font-size: 800%;
 	/*color:rgb(6, 19, 71);*/
-	color:black;
+	color:white;
 	font-family: 'Great Vibes', cursive;
+	opacity:0;
 }
 #description
 {
@@ -67,6 +68,7 @@ body
 	font-family: 'Bitter', serif;
 	color:white;
 	text-align: center;
+	
 }
 
 #logo
@@ -145,12 +147,22 @@ body
     align-self: : center;
     width:80%;
   }
+#menuitem0
+{
+	position:relative;
+	left:20%;
+}
+#menuitem0:hover
+{
+	border:1px solid black;
+	border-radius: 10%;
+}
 #menuitem1:hover,#menuitem2:hover,#menuitem3:hover
 {
 	background-color: black;
 	color:white;
 }
-#menuitem1:focus,#menuitem2:active,#menuitem3:active
+#menuitem1:focus,#menuitem2:focus,#menuitem3:focus,#menuitem0:focus
 {
 	color:rgba(12, 168, 255,0.7)
 }
@@ -282,9 +294,9 @@ body
 .heading
 {
 	position: relative;
-	left:40%;
-	font-size: 200%;
-	font-family: 'Source Serif Pro', serif;
+	left:35%;
+	font-size: 250%;
+	font-family: 'Martel', serif;
 }
 /*
 #aboutMe
@@ -354,6 +366,11 @@ body
 	margin:1%;
 	width:30%;
 	cursor:pointer;
+}
+.multitouchImg:hover
+{
+	transform: scale(1.02);
+  	transform-origin: 50% 50%;
 }
 .mtdesign
 {
