@@ -166,12 +166,19 @@ body
 {
 	color:rgba(12, 168, 255,0.7)
 }
-#projectsContainer,#contactContainer
+#projectsContainer
  {
 
  	width:85%;
  	position:relative;
  	left:15%;
+ 	overflow:hidden;
+ }
+ #contactContainer
+ {
+ 	width:85%;
+ 	position:relative;
+ 	left:10%;
  	overflow:hidden;
  }
  #aboutMe
