@@ -1,6 +1,10 @@
 //document.getElementsByTagName("body")[0].style.width = window.innerWidth;
 document.getElementById("headline").style.height = window.innerHeight;
-//document.getElementById("projectsContainer").style.height = window.innerHeight;
+var i=0;
+if(window.innerHeight>window.innerWidth)
+{
+	document.getElementById('name').style.left='10%';
+}//document.getElementById("projectsContainer").style.height = window.innerHeight;
 setTimeout(transition, 70);
 var i = 0;
 var txt = 'I am a designer, developer and artist passionate about building beautiful, usable and accessible experiences and interfaces.'; 
