@@ -18,7 +18,7 @@ scroll-behavior: smooth;
 body
 {
 	margin:0;
-	background-color:white;
+	
 	scroll-behavior: smooth;
 	text-rendering: optimizeLegibility;	
 }
@@ -322,6 +322,7 @@ body
 	margin-left:15%;
 	margin-bottom:5%;
 	font-family: 'Signika Negative', sans-serif;
+	line-height: 150%;
 }
 .content
 {
