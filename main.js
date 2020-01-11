@@ -1,11 +1,6 @@
 //document.getElementsByTagName("body")[0].style.width = window.innerWidth;
 document.getElementById("headline").style.height = window.innerHeight;
 //document.getElementById("projectsContainer").style.height = window.innerHeight;
-if(window.innerHeight>window.innerWidth)
-{
-	var ele=document.getElementsByClassName('project-element');
-	ele.forEach(changeHeight);
-}
 setTimeout(transition, 70);
 var i = 0;
 var txt = 'I am a designer, developer and artist passionate about building beautiful, usable and accessible experiences and interfaces.'; 
@@ -28,8 +23,4 @@ function typeWriter() {
     i++;
     setTimeout(typeWriter, speed);
   }
-}
-function changeHeight(item)
-{
-  item.style.height=item.style.width;
 }
