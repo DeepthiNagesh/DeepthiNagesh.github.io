@@ -3,7 +3,8 @@ document.getElementById("headline").style.height = window.innerHeight;
 //document.getElementById("projectsContainer").style.height = window.innerHeight;
 if(window.innerHeight>window.innerWidth)
 {
-	document.getElementsByClassName('project-element')[0].style.height='30%';
+	var ele=document.getElementsByClassName('project-element');
+	ele.forEach(changeHeight);
 }
 setTimeout(transition, 70);
 var i = 0;
@@ -27,4 +28,8 @@ function typeWriter() {
     i++;
     setTimeout(typeWriter, speed);
   }
+}
+function changeHeight(item)
+{
+  item.style.height=item.style.width;
 }
