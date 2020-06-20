@@ -104,6 +104,7 @@ body
     border-radius: 9px;
     opacity: 1;
     font-size: 18px;
+    /*font-family:'Trebuchet MS';*/
     font-family: 'Signika Negative', sans-serif;
     padding: 10px;
     font-weight: bold;
@@ -122,6 +123,7 @@ body
     opacity: 1;
     
     font-size: 18px;
+	/*font-family:'Trebuchet MS';*/
     font-family: 'Signika Negative', sans-serif;
     padding: 10px;
     font-weight: bold;
@@ -140,6 +142,7 @@ body
     opacity: 1;
     
     font-size: 18px;
+/*font-family:'Trebuchet MS';*/
     font-family: 'Signika Negative', sans-serif;
     padding: 10px;
     font-weight: bold;
@@ -191,6 +194,7 @@ body
  	margin-top: 5%;
  	border-radius: 5%;
 
+
  }
 .project-element
 {
@@ -201,16 +205,32 @@ body
 	box-sizing: border-box;
 	float:left;
 	/*-webkit-transition: width 2s; /* For Safari 3.1 to 6.0 
-  	transition: width 2s;*/
-  	
+  	transition: width 2s;
+  	box-sizing: border-box;
+  	border-radius: 1em;*/
+  	box-shadow: 2px 2px 6px #888888;
 	transition: opacity .25s ease;
     transition-property: opacity;
     transition-duration: 0.25s;
     transition-timing-function: ease;
     transition-delay: 0s;
     padding:0;
-    margin:2;
+    margin:7;
     text-align: center;
+
+}
+#scd
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35));
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#tm 
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(hci/working-mom.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+
 
 }
 #iv
@@ -254,6 +274,13 @@ body
 	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(tbDiagnosis.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+#tm:hover
+{
+	background-image:linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)),url(hci/working-mom.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
 }
 #iv:hover
 {
@@ -318,6 +345,7 @@ body
 	z-index:0;
 	font-family: 'Bitter', serif;
 	text-decoration: none;
+	
 
 }
 .chemistry
@@ -455,5 +483,18 @@ body
 	margin-right: auto;
 	width:95%
 }
+.subcontent_columns {
+	margin:1%;
+	width:30%;
+	display:flex;
+	flex-direction: column;
+}
+
+.subcontent_rows {
+	width:100%;
+	display:flex;
+	flex-direction:row;
+}
+
 
 
