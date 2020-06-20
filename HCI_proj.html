@@ -1,0 +1,185 @@
+<html>
+<head>
+	<link rel="icon" href="logo-favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kanit|Source+Serif+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id='logo-box'>
+		<img id='logo' src="logo-bolder.png" />
+		<div id='links'>
+		<ul style='list-style: none;position: relative;left:0;'>
+		<li><a href="./index.html" ><img src='home.png' id= 'menuitem0'/></a></li>
+		<li><a href="./index.html#projectsContainer" id= 'menuitem1'>PROJECTS</a></li>
+		<li><a href="./index.html#aboutMe" id= 'menuitem2'>ABOUT ME</a></li>
+		<li><a href="./index.html#contactContainer" id='menuitem3'>CONTACT</a></li>
+		</ul>
+		</div>
+	</header>
+	<div class='chemistry'>
+		<div style='background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(hci/working-mom.jpeg) no-repeat;background-size:cover;width:100%;height:40%;'>
+		<h1 style="position:relative;top:30%;width:70%;margin-left: auto;margin-right: auto;font-family:'Source Serif Pro', serif;color:white">TAMAWALKI</h1>
+		</div>
+		<p>
+		<ul style='padding-left:20px; list-style:none;'>
+		<li class='listitem'>Project-type:Group Project for the course CS6456- Human Computer Interaction</li>
+		<li class='listitem'>Where:Georgia Tech</li>
+		<li class='listitem'>My Role: User Research, Ideation, User Experience Design and Evaluation</li></ul> 
+		<h3 class='subheadings'>THE PROBLEM</h3>
+		<p class='subcontent' style='position:relative;display: block;margin-left: auto;margin-right: auto;width:95%'>Working moms often have a difficult time maintaining a healthy lifestyle due to the nature of their lives. An integral part of this is physical well-being that can be maintained through exercise. Exercise in this context would mean anything as simple as a short walk in the park. The problem here is that, as stress increases due to an increase in responsibility of children or increased workload, it becomes more important to maintain one's health. </p>
+		<h3 class='subheadings'>GOAL</h3>
+		<p class='subcontent'>To discover the pain points of working mothers that can cause lack of exercise and design a solution that can be implemented in their lifestyle. </p>
+		<h3 class='subheadings'>RESEARCH</h3>
+		<h4>Online Surveys and Interviews</h4>
+		<p class='subcontent'>The first step in our process was to reach out to working mothers to understand their motivations and frustrations. Through an online survey of 52 working mothers we wanted to understand how they maintain physical fitness, what are their exercise goals and also if they are able to achieve their goal. Further, we conducted semi structured interviews to obtain the finer details about the lifestyle of working mothers. Finally we also did online observations and research to explore existing solutions and their weaknesses according to users. </p>
+		<h4>Affinity Mapping</h4>
+		<p class='subcontent'>We used affinity modelling to compile the information we gathered through our different research methods to find common themes. We also added design ideas and question we had that were relevant to the concept generation.</p>
+		<div style="display: inline-flex;">
+		<img src='hci/affin1.png' width='50%' style='overflow:hidden;'/>
+		<img src='hci/affin2.png' width='50%' style='overflow:hidden;'/>
+		<img src='hci/affin3.png' width='50%' style='overflow:hidden;'/>
+		</div>
+		<h4>What we found through our user research</h4>
+		<ul>
+			<li>Mothers do not want to reduce the time they spend with their children.</li>
+			<li>Working mothers have dynamic schedules causing it difficult to make a commitment towards regular exercising.</li>
+			<li>They feel that working out in groups are sometimes effective, but can be a commitment.</li>
+			<li>Some mothers expressed that their child accompanying them for workout could be motivating.</li>
+			<li>These busy mothers still try to maintain their health through short exercises.</li>
+		</ul>
+		<h4>Personas</h4>
+		<img src='hci/persona.png' width='60%' style='overflow:hidden;display:block;margin-left: auto;margin-right: auto;'/>
+		<h4>Ideation</h4>
+		<p class="subcontent">Our goal for the ideation process was to come up with a wide range of ideas that we think would solve the problems faced by working moms to do any kind of physical activity. We distributed our ideation process across multiple sessions. At the end of all the ideation sessions we used different ideation techniques to generate more than a hundred ideas.</p>
+		<p class="subcontent">The converging process of the ideas started with clustering the common themes in our design ideas. Then understanding how and if they satisfy the design criteria generated from the frustrations and motivations of working mothers we gathered from our user research.</p>
+		<h4>Ideation clusters</h4>
+		<ul>
+			<li>Exercising during work</li>
+			<li>Mechanisms to motivate mothers</li>
+			<li>Time Management</li>
+			<li>Exercising with children</li>
+			<li>Community building</li>
+			<li>Driving moms to workout</li>
+			<li>Improving views about exercise</li>
+		</ul>
+		<div width='50%' style='display: flex; justify-content: center;'>
+		<img src='hci/Ideation.jpg' width='50%' style='overflow:hidden;border: 0.5px solid black;'/>
+		</div>
+		<h3 class='subheadings'>CONCEPTS</h3>
+		<p class="subcontent">We first filtered down on the themes of Ideation clusters that were time efficient, motivating, flexible, forgiving and empowering for working mothers. From these themes we converged to three concepts and delved into the features and scenarios these concepts would cover.</p>
+		<div style="display: flex; flex-direction: row;flex-wrap: wrap;align-content: space-between;">
+			<div class="subcontent_columns">
+				<h4>Smart Calendar with Redesigned Office spaces</h4>
+				<img width='100%' src="hci/sketch_calendar.jpg" style='overflow:hidden;'/>
+				<p>The smart calendar application for work, finds small open time slots during office hours and creates events that suggest to go for a walk during that time. The smart calendar app can be integrated with work calendars and work emails. Any change in time slots or meetings is automatically reflected in the application. One can add custom routes and places to walk based on their office location and spaces. The idea also includes a social aspect by inviting others in the office that have similar open time slots to join for walks.</p>
+				<ul>
+					<li>Time Efficient</li>
+					<li>Flexible</li>
+					<li>Social</li>
+				</ul>
+				<img width='100%' src="hci/calendar1.png" style='overflow:hidden;'/>
+				<img width='100%' src="hci/calendar2.png" style='overflow:hidden;'/>	
+			</div>
+			<div class="subcontent_columns">
+				<h4>Tamawalki</h4>
+				<img width='100%' src="hci/sketch_tamawalki_2.jpg" style='overflow:hidden;'/>
+				<p>The Tamawalki is a virtual pet that encourages moms to exercise regularly for their children. Each mom will have a virtual pet which must be "walked" in order for it to survive and have energy. As and when the parent Tamawalki is charged ("walked"), they can transfer the energy to child Tamawalki which will be owned by the children. In this way, the more the moms walk, the stronger their children's pet will grow. This way, children would also be actively encouraging them to workout/exercise more so that they have the coolest/strongest pet among their friends.</p>
+				<ul>
+					<li>Motivating</li>
+					<li>Fosters mother and child relationship</li>
+					<li>Flexible</li>
+				</ul>
+				<img width='100%' src="hci/tamawalki.png" style='overflow:hidden;'/>
+			</div>
+			<div class="subcontent_columns">
+				<h4>Virtual group workouts</h4>
+				<img width='100%' src="hci/sketch_vr.jpg" style='overflow:hidden;'/>
+				<p>The Virtual group workouts consist of working moms who meet remotely with a trainer leading them with exercises. Working moms can wear the AR glasses and can view the trainer performing the exercise in real time and follow him/her. In addition to this they can engage and converse with the other members and the trainer as well. The design assumes the use of special purpose AR glasses with audio and visual capabilities made for contexts similar to our problem space and work well within it's constraints.</p>
+				<ul>
+					<li>Flexible</li>
+					<li>Social</li>
+				</ul>
+				<img width='100%' src="hci/vr1.png" style='overflow:hidden;'/>
+				<img width='100%' src="hci/vr2.png" style='overflow:hidden;'/>
+			</div>
+		</div>
+
+		<h3 class='subheadings'>SOLUTION</h3> 
+			<div class='subcontent'>
+				<p>
+					We decided to proceed with Tamawalki: a virtual pet, as our final design concept with some features of the Smart Calendar for the high fidelity prototyping phase, as we concluded that its characteristics reinforced our design criteria in a fun and engaging way.
+					The key features of Tamawalki that helped us evaluate its relevance to the design criteria were:
+					<ul>
+						<li>It motivates the user to engage in physical fitness by developing a relationship with the application i.e the pet</li>
+						<li>It extends the relationship between a parent and child to a digital platform and gives them an opportunity to participate in activities together</li>
+						<li>It creates a network of users who can motivate each other by sharing their stories.</li>
+					</ul>
+				</p>
+				<h4>FEATURES</h4>
+				<div style="display: flex; flex-direction: column;flex-wrap: wrap;align-content: space-between;">
+					<h4>Calendar reminder to walk</h4>
+					<div class="subcontent_rows">
+						<p>The solution integrates with the work calendar of working moms who are our primary stakeholders and reminds them to take a short walk during gaps in their work schedule. As the user walks, her Tamawalki becomes stronger. When the walk is completed, she can share the strength gained to her child's Tamawalki which can be used by the child to unlock new levels of the game. The prototype is flexible to allow users to dismiss such reminders.</p>
+					</div>
+					<h4>Child sends "low power" signal to mom as a reminder to walk</h4>
+					<div class="subcontent_rows">
+						<p>Through the application the child can send a low strength signal to the mom. On accepting, she can either set a timer to walk or can also directly start walking and stop according to their convenience. At the end, she can share her strength with the child. To avoid continuous annoying notifications from children, the application provides an option to snooze the notification directly from the notification bar. The child is allowed to send only one more signal after the mom has snoozed which will keep the notification but also not disturb the mom. Once the mom is free from work, the notification will be a reminder for her to walk.</p>
+					</div>
+					<h4>Pairing own Tamawalki with child's Tamawalki while walking</h4>
+					<div class="subcontent_rows">
+						<p> The solution allows both our primary stakeholders the mom and the child to pair their virtual pets while they walk together through a pairing request. There are points laid out on different routes on a map. As they walk both the mom and the child collect points. Once the walk is complete the child earns points in addition to the points earned by the mom which can be shared to the child. This would motivate the child to walk with their mom to earn double points.</p>
+					</div>
+					<h4>Online community of working mothers</h4>
+					<div class="subcontent_rows">
+						<p>The application includes a community feature that promotes much more domain-specific discussion unlike a general social media platform. Since all the users have a virtual pet, they are all set across the same context and might also be able to connect emotionally. Users of the application can post on the community as well view, like, and comment on the posts of others.</p>
+					</div>
+					<h4> Check progress</h4>
+					<div class="subcontent_rows">
+						<p>The subjects we interviewed revealed that they were already using basic fitness applications to track their exercise. We do not want our primary stakeholders (working moms) to spend time on maintaining two applications and switching between them. By including this feature we want to create a complete application for mothers to check their activity over the day, month or year along with using other available features. This can motivate moms by showing them that they can include exercise in their daily schedule without disrupting their responsibilities or daily activities.</p>
+					</div>
+					
+				</div>
+			</div>
+		
+		<h3 class='subheadings'>EVALUATION</h3>
+		<p class='subcontent'>
+			Due to the limited resources available we had to perform a discount evaluation. We used Expert evaluation techniques like Heuristic Evaluation and Cognitive Walkthrough for  our Design Evaluation. We created three prototypes one clickable interactive prototype and two video prototypes to evaluate our proposed solution. The evaluations was carried out by 6 other HCI students who are trained to evaluate usability based on the design principles.
+		</p>
+			<h4>Interactive prototype: Complete a walking session and share strength with child's Tamawalki</h4>
+				<img width='80%' src="hci/design_table1.png" style='overflow:hidden;display:block;margin-left: auto;margin-right: auto;'/>	
+			<h4>Video prototype 1: Child sends a reminder to the mother to walk through the application</h4>
+			<div style="position:relative;display: block;margin-left: auto;margin-right: auto;width:50%">
+				<iframe src="https://drive.google.com/file/d/1sKcf7Wqj65Z6mwY792KZEKORr7LRu_e8/preview" width="320" height="240" ></iframe>
+			</div>
+
+			<h4>Video prototype 2: Child and mother pair their Tamawalkis and walk together while collecting points on their way.</h4>
+			<div style="position:relative;display: block;margin-left: auto;margin-right: auto;width:50%">
+				<iframe src="https://drive.google.com/file/d/1qVD-D2clnDxl_j4AwPMetm5adz8BASst/preview" width="320" height="240"></iframe>
+			</div>
+
+		<h4>Summary of Recommendations</h4>
+		<div class="subcontent">
+			<p>From the design evaluation exercise we derived the following improvements that would make the soution more effective</p>
+			<ul>
+				<li>The snooze action can be changed to something more meaningful.</li>
+				<li>The strength representation of the Tamawalki should be changed from our current battery icon to something like a lightning bolt icon to avoid confusion.</li>
+				<li>Add more general purpose functionality under the Accounts tab instead of just statistics.</li>
+				<li>Perform more research to design a better child facing interface. More understanding about the motivations and perceptions of children is required.</li>
+			</ul>
+		</div>
+		<div style='text-align:center;'>
+		<a href='#top' style='text-decoration: none; color:rgb(25,25,25,0.5);font-family: Arial;font-size:75%;'>
+		<div>
+				<img src='up1.png'/>
+		</div>
+		 Back to top
+		</a>
+	</div>
+</div>
+<div id="myModal" class="modal">
+
+</body>
+</html>
