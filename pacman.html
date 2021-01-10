@@ -1,0 +1,102 @@
+<html>
+<head>
+	<link rel="icon" href="logo-favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kanit|Source+Serif+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header id='logo-box'>
+		<img id='logo' src="logo-bolder.png" />
+		<div id='links'>
+		<ul style='list-style: none;position: relative;left:0;'>
+		<li><a href="./index.html" ><img src='home.png' id= 'menuitem0'/></a></li>
+		<li><a href="./index.html#projectsContainer" id= 'menuitem1'>PROJECTS</a></li>
+		<li><a href="./index.html#aboutMe" id= 'menuitem2'>ABOUT ME</a></li>
+		<li><a href="./index.html#contactContainer" id='menuitem3'>CONTACT</a></li>
+		</ul>
+		</div>
+	</header>
+	<div class='chemistry'>
+		<!--div class='projectTitle'>
+		<img src='pacman_1.PNG' style='width:100%;'/>
+        </div-->
+        <div style='background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pacman_1.PNG) no-repeat;background-size:cover;width:100%;height:40%;'>
+            <h1 style="position:relative;top:40%;width:60%;margin-left: 42.5%;margin-right: auto;font-family:'Source Serif Pro', serif;color:white">PAC-MAN GODMODE</h1>
+        </div>
+		<p>
+		<ul style='padding-left:20px; list-style:none;'>
+		<li class='listitem'>Project-type:Group Project for the course CS7632-Game AI</li>
+		<li class='listitem'>Where:Georgia Tech</li>
+		<li class='listitem'>My Role: Design,Development,Presentation and Video</li></ul> 
+		<h3 class='subheadings'>PACMAN</h3>
+        <p class='subcontent' style='position:relative;display: block;margin-left: auto;margin-right: auto;width:95%'>Pac-man is a maze chase video game in which the objective is to have a yellow circular character Pac-man navigate through a maze consuming food on it's way while avoiding ghosts each of which pursue it. 
+            When all the food is consumed the game ends and the player wins. When Pac-man comes in contact with a ghost he loses a life. When all lives are lost the game ends and the player loses.</p>
+		<h3 class='subheadings'>GOAL</h3>
+		<p class='subcontent'>To create a Reinforcement Learning agent to replace the player's default Keyboard agent transiently, and take optimal actions and maximize rewards. Secondly we aimed to trigger this mode through some specific user action within a set of constraints. Our initial idea was to have the player(Pac-Man) consume a specially implemented super power pellet to trigger the mode. 
+            The player would benefit by offloading the decision making on the bot when the game becomes too difficult or tricky to play. We saw this will give a two fold advantage: 
+            <ul>
+                <li>It would give players incentive to look for the super power pellet and hence will add an interesting factor in the game.</li>
+                <li>Secondly, this can be helpful when the game is getting too tricky or complex and would allow the player to offload the stress for a little while, giving the feeling of safe fallback.</li>
+            </ul>
+        </p>
+		<h3 class='subheadings'>Algorithm and Implementation</h3>
+		<p class='subcontent'><b>Reinforcement Learning</b>
+            <ul>
+                <li>The computer or the agent employs trial and error to come up with a solution to the problem.</li> 
+                <li>To get the machine to do what the programmer wants, the artificial intelligence gets either rewards or penalties for the actions it performs.</li>                        
+                <li>Its goal is to maximize the total reward.</li>
+            </ul>
+        </p>
+        <p class="subcontent"><b>Q-learning</b>
+            <ul>
+                <li>For Q-learning in the training phase, the agent tries an action for each state. It then records the rewards its getting. The Q value is calculated from the formed state action table.</li>                
+                <li>In the testing phase, the agent would apply the action that had maximum Q value for the given state in the state action table.</li>
+            </ul>
+        </p>
+        <p class="subcontent"><b>Approximate Q-learning</b>
+            <ul>
+                <li>The grid used Pacman can take 107 positions, similarly the two ghosts each can take 107 positions ultimately creating a huge state space.Therefore we used an Approximate Q-learning approach instead of standard Q-learning.</li>
+                <li>The idea is to learn a reward function as a linear combination of features.</li>
+                <li>Features: 'eats-food', 'bias', 'closest-food', '#-of-ghosts-1-step-away'</li>
+                <img src="Pacman_img1.PNG"><img src="Pacman_img2.PNG">
+                <li>We trained the agent using 50 training episodes. Using the final trained weights we tested our game using 10 test games.</li>
+            </ul>
+        </p> 
+		<h3 class='subheadings'>FINAL RESULT</h3>
+        <p class='subcontent'>
+            <ul>
+                <li>Keyboard agent</li>
+                <img src="Pacman_kb_agent.PNG" alt="Pacman played using keyboard agent"/>
+                <li>Q-learning agent</li>
+                <img src="Pacman_ai_agent.PNG" alt="Pacman played using Q-learning agent"/>
+            </ul>
+        </p>
+		<h3 class='subheadings'>PROJECT VIDEO</h3>
+			<div class='subcontent' width='100%' style='margin-left: auto;margin-right: auto;'>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vAlwQ62JvP0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</p>
+		<div style='text-align:center;'>
+		<a href='#top' style='text-decoration: none; color:rgb(25,25,25,0.5);font-family: Arial;font-size:75%;'>
+		<div>
+				<img src='up1.png'/>
+		</div>
+		 Back to top
+		</a>
+	</div>
+</div>
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" id='mcont' style='background-color: rgba(0,0,0,0.5);height:fit-content'>
+    <span class="close">&times;</span>
+    <img src='MT9.png' id='sourceimage' style='overflow:hidden;display:block;width:100%;';/>
+  </div>
+
+	</div>
+</body>
+<script src="mt.js"></script>
+</html>

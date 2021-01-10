@@ -275,6 +275,18 @@ body
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+#god
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(pacman_header.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#mh
+{
+	background-image:linear-gradient(rgba(25,25,25,0.35),rgba(25,25,25,0.35)),url(mental_health.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 #tm:hover
 {
 	background-image:linear-gradient(rgba(25,25,25,0.8),rgba(25,25,25,0.8)),url(hci/working-mom.jpeg);
@@ -322,6 +334,18 @@ body
 #tb:hover
 {
 	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(tbDiagnosis.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#god:hover
+{
+	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(pacman_header.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#mh:hover
+{
+	background-image:linear-gradient(rgba(25,25,25,0.7),rgba(25,25,25,0.7)),url(mental_health.PNG);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
